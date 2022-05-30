@@ -1,0 +1,11 @@
+.card {
+    margin-bottom : 20px;
+    width: 100%;
+}
+p,h5 {
+    text-align: center;
+}
+
+.read-link {
+    text-align: center !important;
+}

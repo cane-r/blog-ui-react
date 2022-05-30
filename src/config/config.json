@@ -1,0 +1,5 @@
+{
+    "posts-url": "/post",
+    "comments-url": "/comment",
+    "base-url": "http://localhost:8080/api"
+}
