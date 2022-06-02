@@ -20,10 +20,6 @@ export interface SinglePostProps extends PostPreviewProps {
     postObj: Post;
 }
 
-export interface SPostProps {
-    id: number;
-}
-
 export interface PostPreviewProps {
     post: Post;
 }

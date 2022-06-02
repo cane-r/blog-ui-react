@@ -19,8 +19,9 @@ const PostPreview: FC<PostPreviewProps> = ({ post }: PostPreviewProps) => {
                     <p className="card-text">{post.content.length > 100 ? post.content.substring(0, 5) + ".." : post.content}</p>
                     <p className="card-text"> Post Created At : {post.createdAt}</p>
                     <p className="card-text">Post Last updated at : {post.updatedAt}</p>
-                    <p className="card-text"> There {post.commentCount > 1 ? "are" : "is"}  {post.commentCount} comment{post.commentCount > 1 ? "s" : ""} in this post. </p>
+                    <p className="card-text"> There {post.commentCount > 1 ? "are" : "is"}  {post.commentCount ? post.commentCount : "no"} comment{post.commentCount > 1 ? "s" : ""} in this post. </p>
                     <p><a href={`/posts/${post.id}`} className="btn btn-primary text-center">Read More...</a></p>
+                    <p><a href={`/posts/edit/${post.id}`} className="btn btn-primary text-center">Edit this post</a></p>
                 </div>
             </div>
         </div>
